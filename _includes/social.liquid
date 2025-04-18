@@ -4,7 +4,13 @@
       <a
         href="https://scholar.google.com/citations?user={{ social[1] }}"
         title="Google Scholar"
-        ><i class="ai ai-google-scholar"></i> Google Scholar</a
+        ><i class="ai ai-google-scholar"></i> GoogleScholar</a
+      >
+    {% when 'slides_username' %}
+      <a
+        href="https://slides.com/{{ social[1] }}"
+        title="Slides"
+        ><i class="fa-regular fa-file-image"></i> Slides</a
       >
     {% when 'linkedin_username' %}
       <a
@@ -23,12 +29,6 @@
         href="https://orcid.org/{{ social[1] }}"
         title="ORCID"
         ><i class="ai ai-orcid"></i> Orcid</a
-      >
-    {% when 'slides_username' %}
-      <a
-        href="https://slides.com/{{ social[1] }}"
-        title="Slides"
-        ><i class="ai ai-google-scholar"></i> Slides</a
       >
 
     {% when 'acm_id' %}
