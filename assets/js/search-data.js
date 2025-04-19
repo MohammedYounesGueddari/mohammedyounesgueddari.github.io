@@ -4,13 +4,13 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-blog",
-          title: "blog",
+          title: "Blog",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -24,14 +24,14 @@ ninja.data = [{
             window.location.href = "/research/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-teaching",
-          title: "teaching",
+          title: "Teaching",
           description: "Materials for courses you taught. Replace this text with your description.",
           section: "Navigation",
           handler: () => {
@@ -118,16 +118,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-pushpin-i-presented-a-poster-at-the-workshop-on-learning-and-inference-from-structured-data-in-trieste-italy-on-elliptic-approximate-message-passing-poster-group-photo",
+          title: ':pushpin: I presented a poster at the Workshop on Learning and Inference from...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-microphone-i-gave-a-talk-at-the-seminaire-des-jeunes-chercheurs-de-reims-sjcr-seminar-in-reims-france-about-the-interplay-between-random-matrix-theory-and-theoretical-ecology-slides",
+          title: ':microphone: I gave a talk at the Seminaire des Jeunes Chercheurs de Reims...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-pushpin-i-presented-a-poster-at-ligm-in-marne-la-vallée-france-on-high-dimensional-lotka-volterra-with-random-interactions-poster",
+          title: ':pushpin: I presented a poster at LIGM in Marne-la-Vallée (France), on high dimensional...',
+          description: "",
+          section: "News",},{id: "news-microphone-i-gave-a-talk-at-the-matrices-et-graphes-aléatoires-mega-seminar-in-paris-france-on-approximate-message-passing-for-non-symmetric-large-random-matrices-slides",
+          title: ':microphone: I gave a talk at the Matrices et graphes aléatoires (MEGA) seminar...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
