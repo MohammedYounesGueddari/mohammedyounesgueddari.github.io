@@ -48,20 +48,27 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/research/' | relative_url }}" style="color: inherit">Papers</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Teaching -->
+    {% if page.teaching %}
+      <h2>
+        <a href="{{ '/teaching/' | relative_url }}" style="color: inherit">Teaching</a>
+      </h2>
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Social -->
